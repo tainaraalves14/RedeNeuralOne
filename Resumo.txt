@@ -1,0 +1,32 @@
+Uma rede neural simples em JavaScript usando a biblioteca p5.js 
+para treinar e fazer previsões. Aqui está um resumo das principais características dessa rede neural:
+
+- **Arquitetura da Rede Neural**:
+  - A rede neural possui três camadas: uma camada de entrada, uma camada oculta e uma camada de saída.
+  - O número de nós em cada camada é definido durante a inicialização da rede neural.
+
+- **Inicialização dos Pesos e Viéses**:
+  - Os pesos e os viéses entre as camadas de entrada/oculta e oculta/saída são inicializados com valores aleatórios.
+  - A taxa de aprendizado é definida como 0.1.
+
+- **Funções de Ativação**:
+  - A função de ativação sigmoid é utilizada nas camadas oculta e de saída para introduzir não-linearidade nos cálculos.
+  - A derivada da função sigmoid é utilizada no algoritmo de retropropagação para calcular os gradientes.
+
+- **Treinamento da Rede Neural**:
+  - O método `train(arr, target)` é usado para treinar a rede neural com um conjunto de dados de entrada e saída esperado.
+  - Durante o treinamento, os dados de entrada são propagados para frente através da rede neural, e o erro entre a saída 
+  prevista e o alvo desejado é calculado.
+  - O algoritmo de retropropagação é utilizado para ajustar os pesos e os viéses com base no erro, utilizando a taxa de 
+  aprendizado definida.
+
+- **Previsão**:
+  - O método `predict(arr)` é usado para prever a saída da rede neural para um conjunto de dados de entrada.
+  - Os dados de entrada são propagados para frente através da rede neural, e a saída prevista é retornada como um array.
+
+Essa rede neural é capaz de aprender a resolver o problema XOR e pode ser estendida e adaptada para resolver uma variedade 
+de outros problemas de aprendizado de máquina.
+
+A operação XOR é útil em muitos contextos, especialmente em circuitos lógicos e em problemas de classificação em aprendizado 
+de máquina, onde é conhecida como o problema XOR. Este problema é interessante porque não pode ser resolvido por um classificador 
+linear simples, tornando-se um bom teste para avaliar a capacidade de uma rede neural em aprender padrões não-lineares.
